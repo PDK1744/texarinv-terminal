@@ -1,4 +1,4 @@
-package com.texar.inventory.service.commands;
+package com.texar.inventory.shell.commands;
 
 import com.texar.inventory.model.Command;
 import com.texar.inventory.model.PC;
@@ -15,6 +15,11 @@ public class ViewPCs implements Command {
     }
 
     @Override
+    public String getName() {
+        return "view pcs";
+    }
+
+    @Override
     public void execute(String[] args){
         try {
             List<PC> pcs = pcService.getAllPCs();
@@ -25,7 +30,7 @@ public class ViewPCs implements Command {
     }
 
     @Override
-    public String getDescription() {
+    public String getShortDescription() {
         return "Displays all PCs in the system";
     }
 }

@@ -1,0 +1,39 @@
+# Maven target directory
+/target/
+
+# JAR files
+*.jar
+
+# Runtime image from jlink
+/packaging/runtime/
+/packaging
+
+# jpackage output
+/dist/
+*.exe
+*.msi
+
+# IDE settings
+# IntelliJ
+.idea/
+*.iml
+/out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+
+# config files (if user-specific, untracked)
+/packaging/app/config.properties
